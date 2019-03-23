@@ -7,6 +7,7 @@
 4. Run the server (`nodemon app.js`)
 
 ## Updating Pictures Instructions
+0. Message Kenneth your Github Username
 1. Clone this repo (`git clone https://github.com/ieeecornell/website.git`)
 2. Go to the project folder (`cd website`)
 3. Find your picture in the `/public/profiles/` folder
