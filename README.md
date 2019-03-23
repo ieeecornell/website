@@ -14,7 +14,8 @@
 5. Run (`git add -A`)
 6. Run (`git commit -m "Updated <your name here>"`)
 7. Run (`git push`)
-6.5. If you get the message that the remote repository has changes you do not have locally, run `git pull --rebase` and then rerun (`git push`)
+
+If you get the message that the remote repository has changes you do not have locally, run `git pull --rebase` and then rerun (`git push`)
 
 
 
