@@ -1,0 +1,30 @@
+---
+-   
+    team: Corporate
+    members: 
+        -
+            netid: kwf37
+            role: A Spooky Dude
+            name: Kenneth Fang
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: fbg6
+            role: wowie
+            name: Felicia Guo
+            ama: Programming Languages, Bread Baking
+            
+-   
+    team: Web
+    members: 
+        -
+            netid: kwf37
+            role: A Spooky Dude
+            name: Kenneth Fang
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: fbg6
+            role: wowie
+            name: Felicia guo
+            ama: Programming Languages, Bread Baking
