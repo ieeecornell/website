@@ -29,6 +29,8 @@ function loadProfiles() {
     })
 
     // Reload Table of Contents
-    Toc.init($('#toc'));
+    Toc.init({
+       $nav: $('#toc'),
+       $scope: $("h2")});
   })
 }
