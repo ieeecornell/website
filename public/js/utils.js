@@ -6,7 +6,7 @@ function loadProfiles() {
       var team = data.team
 
       // Create a section header for the team
-      $('#profiles').append(`<h2>${team}</h2>`)
+      $('#profiles').append(`<h3>${team}</h3>`)
 
       // Make a Flexbox for the team
       $('#profiles').append(`<div id='${team}' class="d-flex p-2 bd-highlight justify-content-center""></div>`)
@@ -31,6 +31,6 @@ function loadProfiles() {
     // Reload Table of Contents
     Toc.init({
        $nav: $('#toc'),
-       $scope: $("h2")});
+       $scope: $("h2, h3")});
   })
 }
