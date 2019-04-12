@@ -1,4 +1,4 @@
-cd Do# IEEE Website (Under Construction)
+# IEEE Website (Under Construction)
 
 ## Installation Instructions
 1. Install NodeJS: [https://nodejs.org/en/](https://nodejs.org/en/)
