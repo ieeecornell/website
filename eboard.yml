@@ -1,36 +1,162 @@
 ---
 -   
+    team: Co-Presidents
+    members: 
+        -
+            netid: afl59
+            role: wowie
+            name: Alexander Li
+            ama: Programming Languages, Bread Baking
+            
+        -
+            netid: lpr46
+            role: wowie
+            name: Laasya Renganathan
+            ama: Programming Languages, Bread Baking
+
+-   
     team: Corporate
     members: 
         -
-            netid: kwf37
+            netid: djb326
             role: A Spooky Dude
+            name: Daniel Buscaglia
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: sj397
+            role: wowie
+            name: Sanskriti Joshi
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: sk2735
+            role: wowie
+            name: Brian Kim
+            ama: Programming Languages, Bread Baking
+            
+-   
+    team: Academic
+    members: 
+        -
+            netid: ak2255
+            role: A Spooky Dude
+            name: Alisha Kochar
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: kwf37
+            role: wowie
             name: Kenneth Fang
             ama: Programming Languages, Bread Baking
 
+        -
+            netid: asl247
+            role: wowie
+            name: Alexander La Cour
+            ama: Programming Languages, Bread Baking
+            
+-   
+    team: Social
+    members: 
+        -
+            netid: aa2224
+            role: A Spooky Dude
+            name: Aditi Agarwal
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: vd89
+            role: wowie
+            name: Vaishnavi Dhulkhed
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: sb2276
+            role: wowie
+            name: Sheila Balu
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: cck78
+            role: wowie
+            name: Chloe Kuo
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: kmm398
+            role: wowie
+            name: Katerina Martucci
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: kzy2
+            role: wowie
+            name: Kevin Ying
+            ama: Programming Languages, Bread Baking
+
+-   
+    team: Publicity
+    members: 
+        -
+            netid: jct263
+            role: A Spooky Dude
+            name: Joy Thean
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: hh494
+            role: wowie
+            name: Sheena Huang
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: cw683
+            role: wowie
+            name: Crystal Wu
+            ama: Programming Languages, Bread Baking
+
+        -
+            netid: kdb72
+            role: wowie
+            name: Kelsie Barnes
+            ama: Programming Languages, Bread Baking
+           
+-   
+    team: Web
+    members: 
         -
             netid: fbg6
             role: wowie
             name: Felicia Guo
             ama: Programming Languages, Bread Baking
             
--   
-    team: Web
-    members: 
-        -
-            netid: kwf37
-            role: A Spooky Dude
-            name: Kenneth Fang
-            ama: Programming Languages, Bread Baking
-
-        -
-            netid: fbg6
-            role: wowie
-            name: Felicia guo
-            ama: Programming Languages, Bread Baking
-            
         -
             netid: ped48
             role: wowie
             name: Priyanka Dilip
+            ama: Programming Languages, Bread Baking
+
+-   
+    team: General Adminstrative Assistants
+    members: 
+        -
+            netid: mk864
+            role: wowie
+            name: Mira Kim
+            ama: Programming Languages, Bread Baking
+            
+        -
+            netid: jt658
+            role: wowie
+            name: Jessica Tawade
+            ama: Programming Languages, Bread Baking
+            
+-   
+    team: Treasury
+    members: 
+        -
+            netid: dms486
+            role: wowie
+            name: Diane Sutyak
             ama: Programming Languages, Bread Baking
