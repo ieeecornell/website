@@ -33,17 +33,6 @@ app.get('/sponsors', (req, res) => {
 })
 
 app.get('/pcard', (req, res) => {
-app.get('/merch', (req, res) => {
-    try {
-        var profiles = yaml.safeLoad(fs.readFileSync('merch.yml', 'utf8'));
-        console.log(profiles);
-        res.send(profiles)
-    } catch (e) {
-        console.log(e);
-    }
-})
-
-app.get('/card', (req, res) => {
     // Get document, or throw exception on error
     try {
         var profile_card = fs.readFileSync('public/profile_card.html', 'utf8')
