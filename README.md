@@ -45,9 +45,10 @@ If you get the message that the remote repository has changes you do not have lo
 
 
 ## Modifying Static-Hosted Website
-You may only modify ieee.ece.cornell.edu if you are one of the listed people. If you would like access please message Felicia:
+You may only modify ieee.ece.cornell.edu if you are one of the listed people. If you would like access please message Felicia (any one of the people listed should also have full administrative access/management):
 * Priyanka Dilip
 * Kenneth Fang
+* Felicia Guo
 * Rohan Patel 
 * Joy Thean
 * Kevin Ying

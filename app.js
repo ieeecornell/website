@@ -21,6 +21,16 @@ app.get('/about', (req, res) => {
     }
 })
 
+app.get('/merch', (req, res) => {
+    try {
+        var profiles = yaml.safeLoad(fs.readFileSync('merch.yml', 'utf8'));
+        console.log(profiles);
+        res.send(profiles)
+    } catch (e) {
+        console.log(e);
+    }
+})
+
 app.get('/card', (req, res) => {
     // Get document, or throw exception on error
     try {
@@ -32,4 +42,4 @@ app.get('/card', (req, res) => {
     }
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`IEEE Cornell Website listening on port ${port}!`))
