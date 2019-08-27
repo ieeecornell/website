@@ -1,7 +1,9 @@
+
 function loadProfiles() {
 
   $.get('about', function (data, status) {
-    //console.log(data)
+    console.log("hello?");
+    console.log(data)
     $.each(data, function (index, data) {
       var team = data.team
 
@@ -31,6 +33,40 @@ function loadProfiles() {
     // Reload Table of Contents
     Toc.init({
        $nav: $('#toc'),
-       $scope: $("h2, h3")});
+       $scope: $("h3")});
+  })
+}
+
+
+function loadCompanies() {
+  console.log("can call function")
+  $.get('sponsors', function (data, status) {
+    console.log("got thing?")
+    console.log(data)
+    $.each(data, function (index, data) {
+      var level = data.level
+
+      // Create a section header for the team
+      //$('#sponsors').append(`<h3>${level}</h3>`)
+
+      // Make a Flexbox for the sponsor level
+      $('#companies').append(`<div id='${level}' class="d-flex p-2 bd-highlight justify-content-center""></div>`)
+
+      $.each(data.companies, function (index, company) {
+        var div_id = level + '_' + company.image
+        $(`#${level}`).append(`<div id='${div_id}'></div>`)
+
+        $(`#${div_id}`).load('company_card.html', function () {
+          
+
+          $(`#${div_id}`).find('img').attr('src', `/images/sponsors/${company.image + '.jpg'}`)
+          $(`#${div_id}`).find('img').attr('alt', `${company.image + '.jpg'}`)
+
+
+          //$(`#${div_id}`).find('h6').text(`${member.name}`)
+          //$(`#${div_id}`).find('p').text(`${member.role}`)
+        })
+      })
+    })
   })
 }

@@ -21,6 +21,18 @@ app.get('/about', (req, res) => {
     }
 })
 
+app.get('/sponsors', (req, res) => {
+    // Get document, or throw exception on error
+    try {
+        var sponsor = yaml.safeLoad(fs.readFileSync('sponsor.yml', 'utf8'));
+        console.log(sponsor);
+        res.send(sponsor)
+    } catch (e) {
+        console.log(e);
+    }
+})
+
+app.get('/pcard', (req, res) => {
 app.get('/merch', (req, res) => {
     try {
         var profiles = yaml.safeLoad(fs.readFileSync('merch.yml', 'utf8'));
@@ -37,6 +49,17 @@ app.get('/card', (req, res) => {
         var profile_card = fs.readFileSync('public/profile_card.html', 'utf8')
         console.log(profile_card)
         res.send(profile_card)
+    } catch (e) {
+        console.log(e);
+    }
+})
+
+app.get('/scard', (req, res) => {
+    // Get document, or throw exception on error
+    try {
+        var company_card = fs.readFileSync('public/company_card.html', 'utf8')
+        console.log(company_card)
+        res.send(company_card)
     } catch (e) {
         console.log(e);
     }
