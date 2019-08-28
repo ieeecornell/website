@@ -1,0 +1,51 @@
+---
+-   
+   team: Featured Designs
+   members:
+       -
+            title: IEEE 2018
+            subtitle: M, L, XL available
+            image1: 2018Back.png
+            image2: 2018Front.png
+
+       -
+            title: IEEE 2015
+            subtitle: M, L, XL available
+            image1: 2015Front.png
+            image2: 2015Back.png
+
+-
+    team: Past Designs
+    members: 
+        -
+            title: All Work All Play
+            subtitle: XL available
+            image1: anonshirt.jpeg
+            image2: BlackBack.png
+
+        -
+            title: IEEE XPlore
+            subtitle: M, L, XL available
+            image1: blueFront.png
+            image2: blueBack.png
+            
+        -
+            title: Hertz
+            subtitle: L available
+            image1: WattFront.png
+            image2: BlackFront2.png
+
+        -
+            title: Big IEEE
+            subtitle: S, M available
+            image1: blackFront.png
+            image2: WattBack.png
+
+-
+    team: Accessories
+    members:
+        -
+            title: IEEE Bracelet
+            subtitle: Available
+            image1: IEEEBracelet.png
+            image2: IEEEBracelet.png
