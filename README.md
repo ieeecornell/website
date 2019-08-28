@@ -45,16 +45,10 @@ If you get the message that the remote repository has changes you do not have lo
 
 
 ## Modifying Static-Hosted Website
-<<<<<<< HEAD
-You may only modify ieee.ece.cornell.edu if you are one of the listed people. If you would like access please message Felicia:
-* Priyanka Dilip
-* Kenneth Fang
-=======
 You may only modify ieee.ece.cornell.edu if you are one of the listed people. If you would like access please message Felicia (any one of the people listed should also have full administrative access/management):
 * Priyanka Dilip
 * Kenneth Fang
 * Felicia Guo
->>>>>>> 6396800c201b41e207fc1ec54caa13b74b9507d2
 * Rohan Patel 
 * Joy Thean
 * Kevin Ying
@@ -62,13 +56,8 @@ You may only modify ieee.ece.cornell.edu if you are one of the listed people. If
 To modify files:
 
 <<<<<<< HEAD
-0. To configure the WebDAV client, you must use a special WebDAV client. Download one of DreamWeaver, BitKinex, WinSCP, Cyberduck, Transmit,
-1. obtain a WebDAV key by visiting [link to https://webhost092.hosting.cornell.edu:8144/davlogin](https://webhost092.hosting.cornell.edu:8144/davlogin) in a webbrowser.  Login using your NetID & Password, and copy the entire long string the page displays into your clipboard:
-2. use the following WebDAV connection URL: [link to https://webhost092.hosting.cornell.edu:8144/ieee-ece/htdocs/](https://webhost092.hosting.cornell.edu:8144/ieee-ece/htdocs/) to configure your WebDAV client; this link will only work in your WebDAV client downloaded in step 0.
-3. Use your NetID as a username, and the WebDAV key you obtained from step 1 as your password to configure your WebDAV client.  Your key will be valid for eight hours.  After that, you will have to generate a new key and re-login. 
-=======
+0. To configure the WebDAV client, you must use a special WebDAV client. Download one of DreamWeaver, BitKinex, WinSCP, Cyberduck, Transmit.
 1. To configure the WebDAV client, you must use a special WebDAV client. Download one of DreamWeaver, BitKinex, WinSCP, Cyberduck, Transmit,
 2. obtain a WebDAV key by visiting [https://webhost092.hosting.cornell.edu:8144/davlogin](https://webhost092.hosting.cornell.edu:8144/davlogin) in a webbrowser.  Login using your NetID & Password, and copy the entire long string the page displays into your clipboard:
 3. use the following WebDAV connection URL: [https://webhost092.hosting.cornell.edu:8144/ieee-ece/htdocs/](https://webhost092.hosting.cornell.edu:8144/ieee-ece/htdocs/) to configure your WebDAV client; this link will only work in your WebDAV client downloaded in step 0.
 4. Use your NetID as a username, and the WebDAV key you obtained from step 1 as your password to configure your WebDAV client.  Your key will be valid for eight hours.  After that, you will have to generate a new key and re-login. 
->>>>>>> 6396800c201b41e207fc1ec54caa13b74b9507d2
