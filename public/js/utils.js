@@ -70,3 +70,46 @@ function loadCompanies() {
     })
   })
 }
+
+function loadMerch() {
+
+  $.get('about', function (data, status) {
+    console.log("merch hello?");
+    console.log(data)
+    $.each(data, function (index, data) {
+      var team = data.team
+
+      // Create a section header for the team
+      $('#merch').append(`<h3>${team}</h3>`)
+
+      // Make a Flexbox for the team
+      $('#merch').append(`<div id='${team}' class="d-flex p-2 bd-highlight justify-content-center""></div>`)
+
+      $.each(data.members, function (index, member) {
+        var div_id1 = team + '_' + member.image1
+        $(`#${team}`).append(`<div id='${div_id1}'></div>`)
+        var div_id2 = team + '_' + member.image2
+        $(`#${team}`).append(`<div id='${div_id2}'></div>`)
+
+        $(`#${div_id}`).load('profile_card.html', function () {
+
+
+          $(`#${div_id}`).find('img').attr('src', `/images/merch/${member.image1}`)
+          $(`#${div_id}`).find('img').attr('alt', `${member.image1}`)
+          $(`#${div_id}`).find('img').attr('src', `/images/merch/${member.image2}`)
+          $(`#${div_id}`).find('img').attr('alt', `${member.image2}`)
+
+
+          $(`#${div_id}`).find('h6').text(`${member.title}`)
+          $(`#${div_id}`).find('p').text(`${member.subtitle}`)
+        })
+      })
+    })
+
+    // Reload Table of Contents
+    Toc.init({
+       $nav: $('#toc'),
+       $scope: $("h3")});
+  })
+}
+
