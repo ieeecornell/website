@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- add after bootstrap.min.css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
+
+    <!-- Custom IEEE CSS- MUST COME AFTER Boostrap CSS -->
+    <link rel="stylesheet" href="/styles/ieee.css">
+
+
+    <title>IEEE Cornell</title>
+</head>
+
+
+
+<body data-spy="scroll" data-target="#toc">
+<div id="header"></div>
+
+<div class="container">
+    <div class="row">
+        <!-- main content area -->
+        <div class="col-sm-12">
+            <div id="companies", style="text-align: center">
+                <h1 style="text-align: center">Merch!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<!-- add after bootstrap.min.js -->
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+<script src="js/utils.js"></script>
+
+
+<script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#mission").load("mission.html");
+            loadMerch();
+        });
+    </script>
+
+<script src="js-yaml.min.js"></script>
+<script type="text/javascript">
+        fetch( 'http://ieee.ece.cornell.edu/merch.yml')
+	.then(response => response.text())
+	.then((doc) => {
+	    console.log(data);
+	    //way to display images with names
+            var data = jsyaml.load( doc );
+	    console.log(data);
+
+	$.each(data, function (index, data) {
+      var team = data.team
+
+      // Create a section header for the team
+      $('#merch').append(`<h3>${team}</h3>`)
+
+      // Make a Flexbox for the team
+      $('#merch').append(`<div id='${team}' class="d-flex p-2 bd-highlight justify-content-center""></div>`)
+
+      $.each(data.members, function (index, member) {
+        var div_id1 = team + '_' + member.image1
+        $(`#${team}`).append(`<div id='${div_id1}'></div>`)
+        var div_id2 = team + '_' + member.image2
+        $(`#${team}`).append(`<div id='${div_id2}'></div>`)
+
+        $(`#${div_id}`).load('profile_card.html', function () {
+
+
+          $(`#${div_id}`).find('img').attr('src', `/public/images/merch/${member.image1}`)
+          $(`#${div_id}`).find('img').attr('alt', `${member.image1}`)
+          $(`#${div_id}`).find('img').attr('src', `/public/images/merch/${member.image2}`)
+          $(`#${div_id}`).find('img').attr('alt', `${member.image2}`)
+
+
+          $(`#${div_id}`).find('h6').text(`${member.title}`)
+          $(`#${div_id}`).find('p').text(`${member.subtitle}`)
+        })
+      })
+    })
+	});
+
+
+
+    </script>
+
+</script>
+
+</body>
+
+
+</html>
